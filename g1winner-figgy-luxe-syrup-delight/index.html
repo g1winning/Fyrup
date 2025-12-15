@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyrup - Nature's Perfect Sweetener</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-raleway bg-amber-50 text-purple-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-playfair font-bold text-purple-800">Fyrup</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#about" class="text-purple-800 hover:text-amber-600 transition">About</a>
+                        <a href="#products" class="text-purple-800 hover:text-amber-600 transition">Products</a>
+                        <a href="#recipes" class="text-purple-800 hover:text-amber-600 transition">Recipes</a>
+                        <a href="checkout.html" class="px-4 py-2 bg-amber-600 text-white rounded-full hover:bg-amber-700 transition">Order Now</a>
+</div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-purple-800">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-white/95 backdrop-blur-lg pt-20 px-4">
+        <div class="flex flex-col space-y-6 text-center">
+            <a href="#about" class="text-2xl text-purple-800 hover:text-amber-600 transition">About</a>
+            <a href="#products" class="text-2xl text-purple-800 hover:text-amber-600 transition">Products</a>
+            <a href="#recipes" class="text-2xl text-purple-800 hover:text-amber-600 transition">Recipes</a>
+                        <a href="checkout.html" class="text-2xl px-6 py-3 bg-amber-600 text-white rounded-full hover:bg-amber-700 transition mx-auto">Order Now</a>
+</div>
+        <button id="menu-close" class="absolute top-6 right-6 text-purple-800">
+            <i data-feather="x"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/30 z-10"></div>
+        <img src="https://enzostvs-cached-generation.hf.space/generate/ripe-figs-with-syrup-pouring?format=landscape-16_9" alt="Fresh figs with syrup" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 text-center px-4 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 animate-fade-in">Fyrup: Nature's Perfect Sweetener</h1>
+            <p class="text-xl md:text-2xl text-white mb-8 animate-fade-in delay-100">Deep, caramel-like fig notes that enhance drinks and dishes subtly – the perfect balanced replacement for simple syrup.</p>
+<a href="#products" class="inline-block px-8 py-3 bg-amber-600 text-white rounded-full text-lg font-medium hover:bg-amber-700 transition animate-fade-in delay-200">Discover Fyrup</a>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+            <a href="#about" class="text-white">
+                <i data-feather="chevron-down" class="w-8 h-8"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-amber-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative rounded-xl overflow-hidden shadow-lg h-96">
+                    <img src="https://enzostvs-cached-generation.hf.space/generate/organic-fig-farm?format=portrait-3_4" alt="Organic fig farm" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-playfair font-bold text-purple-800 mb-6">Why Choose Fyrup?</h2>
+                    <p class="text-lg text-purple-900 mb-6">Fyrup is the ideal natural alternative to refined simple syrup. With its subtle, sophisticated flavor profile, it enhances without overpowering. Unlike empty-calorie refined sugar syrup, Fyrup delivers real nourishment from whole figs – supporting immunity, heart health, and vitality the natural way.</p>
+<div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-amber-600">
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <p class="text-purple-900">Packed with antioxidants that fight free radicals and oxidative stress</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-amber-600">
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <p class="text-purple-900">Rich in minerals like potassium, calcium, magnesium, and iron for better blood pressure, bone health, and energy</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-amber-600">
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <p class="text-purple-900">High in dietary fiber for digestion and gentle blood sugar support (lower glycemic impact than refined sugar)</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1 mr-4 text-amber-600">
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <p class="text-purple-900">Natural anti-inflammatory properties</p>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-lg font-medium text-purple-800">Our figs are grown without any pesticides or herbicides – pure, clean, and straight from nature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-purple-800 mb-4">Premium Pure Fig Syrup</h2>
+                <p class="text-xl text-purple-900 max-w-3xl mx-auto">Available in convenient 250ml bottles or bulk 4L drums for all your culinary needs.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-gradient-to-b from-amber-50 to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="relative h-64 mb-6">
+                        <img src="https://enzostvs-cached-generation.hf.space/generate/elegant-glass-bottle-of-fig-syrup?format=portrait-3_4" alt="250ml bottle" class="absolute inset-0 w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-playfair font-bold text-purple-800 mb-2">250ml Bottle</h3>
+                    <p class="text-purple-900 mb-4">Perfect for home use, cocktails, and small batch recipes.</p>
+                    <div class="text-2xl font-bold text-amber-600 mb-6">$18.99</div>
+                    <a href="checkout.html" class="block w-full py-3 bg-purple-800 text-white rounded-full hover:bg-purple-900 transition text-center">Order Now</a>
+</div>
+                <div class="bg-gradient-to-b from-amber-50 to-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="relative h-64 mb-6">
+                        <img src="https://enzostvs-cached-generation.hf.space/generate/4-litre-metal-tin-drum-of-fig-syrup-similar-to-olive-oil-container?format=portrait-3_4" alt="4L tin drum" class="absolute inset-0 w-full h-full object-contain">
+</div>
+                    <h3 class="text-2xl font-playfair font-bold text-purple-800 mb-2">4L Drum</h3>
+                    <p class="text-purple-900 mb-4">Ideal for professional kitchens, bars, and serious home chefs.</p>
+                    <div class="text-2xl font-bold text-amber-600 mb-6">$149.99</div>
+                    <a href="checkout.html" class="block w-full py-3 bg-purple-800 text-white rounded-full hover:bg-purple-900 transition text-center">Order Now</a>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Section -->
+    <section id="recipes" class="py-20 bg-gradient-to-b from-white to-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-purple-800 mb-4">Recipes & Serving Suggestions</h2>
+                <p class="text-xl text-purple-900 max-w-3xl mx-auto">Elevate your cocktails, desserts, and everyday drinks with Fyrup's deep, caramel-like fig notes.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative h-64">
+                        <img src="https://enzostvs-cached-generation.hf.space/generate/fig-old-fashioned-cocktail?format=portrait-3_4" alt="Fig Old Fashioned" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-purple-800 mb-2">Fig Old Fashioned</h3>
+                        <p class="text-purple-900 mb-4">Fyrup's subtle fig notes complement the bourbon beautifully without overpowering it.</p>
+<ul class="text-sm text-purple-900 space-y-1">
+                            <li>• 2 oz bourbon</li>
+                            <li>• ½ oz Fyrup</li>
+                            <li>• 2 dashes aromatic bitters</li>
+                            <li>• Orange twist for garnish</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative h-64">
+                        <img src="https://enzostvs-cached-generation.hf.space/generate/fig-margarita-cocktail?format=portrait-3_4" alt="Fig Margarita" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-purple-800 mb-2">Fig Margarita</h3>
+                        <p class="text-purple-900 mb-4">The delicate fig flavor adds depth while letting the tequila shine.</p>
+<ul class="text-sm text-purple-900 space-y-1">
+                            <li>• 2 oz tequila</li>
+                            <li>• 1 oz lime juice</li>
+                            <li>• ¾ oz Fyrup</li>
+                            <li>• ½ oz triple sec</li>
+                            <li>• Salt rim & lime wedge</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative h-64">
+                        <img src="https://enzostvs-cached-generation.hf.space/generate/yogurt-with-fig-syrup-drizzle?format=portrait-3_4" alt="Yogurt with Fyrup" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-purple-800 mb-2">Breakfast Upgrade</h3>
+                        <p class="text-purple-900 mb-4">A light drizzle enhances without overwhelming the natural flavors.</p>
+<ul class="text-sm text-purple-900 space-y-1">
+                            <li>• Greek yogurt or pancakes</li>
+                            <li>• Drizzle of Fyrup</li>
+                            <li>• Fresh fruit</li>
+                            <li>• Nuts or granola</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative h-64">
+                        <img src="https://enzostvs-cached-generation.hf.space/generate/fig-mojito-cocktail?format=portrait-3_4" alt="Fig Mojito" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-purple-800 mb-2">Fig Mojito</h3>
+                        <p class="text-purple-900 mb-4">A refreshing twist on the classic with Fyrup's natural sweetness.</p>
+<ul class="text-sm text-purple-900 space-y-1">
+                            <li>• 2 oz white rum</li>
+                            <li>• 1 oz Fyrup</li>
+                            <li>• ¾ oz lime juice</li>
+                            <li>• 6-8 mint leaves</li>
+                            <li>• Soda water</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative h-64">
+                        <img src="https://enzostvs-cached-generation.hf.space/generate/fig-glazed-salmon?format=portrait-3_4" alt="Fig Glazed Salmon" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-purple-800 mb-2">Fig Glazed Salmon</h3>
+                        <p class="text-purple-900 mb-4">The perfect balance of sweet and savory for your main course.</p>
+<ul class="text-sm text-purple-900 space-y-1">
+                            <li>• 2 salmon fillets</li>
+                            <li>• 2 tbsp Fyrup</li>
+                            <li>• 1 tbsp soy sauce</li>
+                            <li>• 1 tsp Dijon mustard</li>
+                            <li>• Garlic powder to taste</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative h-64">
+                        <img src="https://enzostvs-cached-generation.hf.space/generate/fig-syrup-smoothie?format=portrait-3_4" alt="Fig Smoothie" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-bold text-purple-800 mb-2">Power Smoothie</h3>
+                        <p class="text-purple-900 mb-4">A nutritious boost with natural sweetness from Fyrup.</p>
+<ul class="text-sm text-purple-900 space-y-1">
+                            <li>• 1 banana</li>
+                            <li>• ½ cup Greek yogurt</li>
+                            <li>• 1 tbsp Fyrup</li>
+                            <li>• ½ cup almond milk</li>
+                            <li>• 1 tbsp chia seeds</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+</div>
+    </section>
+    <!-- More Recipes Section -->
+    <section class="py-20 bg-gradient-to-b from-amber-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-playfair font-bold text-purple-800 mb-4">More Delicious Ideas</h2>
+                <p class="text-xl text-purple-900 max-w-3xl mx-auto">Discover more ways to enjoy Fyrup in your kitchen.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-playfair font-bold text-purple-800 mb-3">Fig Vinaigrette</h3>
+                    <ul class="text-sm text-purple-900 space-y-1">
+                        <li>• ¼ cup olive oil</li>
+                        <li>• 2 tbsp Fyrup</li>
+                        <li>• 2 tbsp balsamic vinegar</li>
+                        <li>• 1 tsp Dijon mustard</li>
+                        <li>• Salt & pepper to taste</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-playfair font-bold text-purple-800 mb-3">Fig Butter Toast</h3>
+                    <ul class="text-sm text-purple-900 space-y-1">
+                        <li>• Sourdough bread</li>
+                        <li>• Ricotta cheese</li>
+                        <li>• Drizzle of Fyrup</li>
+                        <li>• Walnuts</li>
+                        <li>• Honey (optional)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-playfair font-bold text-purple-800 mb-3">Fig Lemonade</h3>
+                    <ul class="text-sm text-purple-900 space-y-1">
+                        <li>• 1 cup lemon juice</li>
+                        <li>• ½ cup Fyrup</li>
+                        <li>• 4 cups water</li>
+                        <li>• Ice cubes</li>
+                        <li>• Lemon slices & mint</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section class="py-12 bg-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative h-48 md:h-64 overflow-hidden rounded-lg">
+                    <img src="https://enzostvs-cached-generation.hf.space/generate/fresh-ripe-figs-on-tree?format=square" alt="Fresh figs" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="relative h-48 md:h-64 overflow-hidden rounded-lg">
+                    <img src="https://enzostvs-cached-generation.hf.space/generate/fig-syrup-pouring-into-tea?format=square" alt="Syrup in tea" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="relative h-48 md:h-64 overflow-hidden rounded-lg">
+                    <img src="https://enzostvs-cached-generation.hf.space/generate/cheese-plate-with-fig-syrup?format=square" alt="Cheese plate" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="relative h-48 md:h-64 overflow-hidden rounded-lg">
+                    <img src="https://enzostvs-cached-generation.hf.space/generate/ice-cream-with-fig-syrup?format=square" alt="Ice cream" class="absolute inset-0 w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-purple-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-2xl font-playfair font-bold mb-4">Fyrup</h3>
+                    <p class="text-purple-200 mb-4">Nature's perfect sweetener – pure, nourishing, and delicious.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-purple-200 hover:text-amber-400 transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-purple-200 hover:text-amber-400 transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-purple-200 hover:text-amber-400 transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-purple-200 hover:text-amber-400 transition">
+                            <i data-feather="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-purple-200 hover:text-amber-400 transition">About Fyrup</a></li>
+                        <li><a href="#products" class="text-purple-200 hover:text-amber-400 transition">Our Products</a></li>
+                        <li><a href="#recipes" class="text-purple-200 hover:text-amber-400 transition">Recipes</a></li>
+                        <li><a href="#" class="text-purple-200 hover:text-amber-400 transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-2 text-purple-200">
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="mr-2 mt-1"></i>
+                            <span>info@fyrup.com</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1"></i>
+                            <span>+61 477 815 638</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1"></i>
+                            <span>Shepperton, Australia</span>
+                        </div>
+</div>
+                </div>
+            </div>
+            <div class="border-t border-purple-700 mt-12 pt-8 text-center text-purple-400">
+                <p>Fyrup – Pure fig syrup produced by Santo Romao in Shepperton, Australia. Contact: +61 477 815 638</p>
+                <p class="mt-4">&copy; 2023 Fyrup. All rights reserved.</p>
+</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
